@@ -11,3 +11,6 @@ Thumbs.db
 /.Skills/Review/
 /.Skills/Coding_Assistant/
 main.py
+*.csv
+*.xlsx
+!sample_data.csv
