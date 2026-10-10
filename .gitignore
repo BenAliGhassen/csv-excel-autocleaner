@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+.pytest_cache/
+cleaned_data.csv
+ToDo.docx
+.streamlit/secrets.toml
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+/.Skills/Review/
+/.Skills/Coding_Assistant/
+main.py
