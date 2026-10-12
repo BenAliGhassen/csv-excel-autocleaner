@@ -1,5 +1,9 @@
 # CSV/Excel Auto-Cleanup Tool (v1)
 
+
+[![.github/workflows/test.yml](https://github.com/BenAliGhassen/csv-excel-autocleaner/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/BenAliGhassen/csv-excel-autocleaner/actions/workflows/test.yml)
+
+
 A Streamlit app that cleans messy CSV and Excel files. You upload a file, build an ordered
 chain of cleaning actions, run it, and get back the cleaned table, a log of what each action
 changed, and a CSV to download.
