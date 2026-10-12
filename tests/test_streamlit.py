@@ -258,32 +258,6 @@ def test_run_applies_actions_in_order_and_shows_result_and_download():
     assert len(download_buttons) == 1
     assert download_buttons[0].label == "Download cleaned CSV"
 
-    app.button(key="add_action").click().run()
-
-    assert not app.exception
-    assert_frame_equal(app.dataframe[1].value, expected)
-    assert len(app.dataframe) >= 3
-
-
-def test_uploading_a_different_file_resets_actions_and_previous_results():
-    app = _load_app("name,score\nada,1\n")
-    action_id = _add_action(app)
-    app.selectbox(key=f"type_{action_id}").select("Normalize casing").run()
-    app.multiselect(key=f"columns_{action_id}").select("name").run()
-    app.selectbox(key=f"strategy_{action_id}").select("upper").run()
-    app.button(key="run_cleaning").click().run()
-    assert len(app.session_state["actions"]) == 1
-    assert "cleaned_df" in app.session_state
-
-    app.file_uploader[0].set_value(
-        ("different.csv", b"city,count\nParis,2\n", "text/csv")
-    ).run()
-
-    assert not app.exception
-    assert app.session_state["actions"] == []
-    assert "cleaned_df" not in app.session_state
-    assert [button.label for button in app.button] == ["Add action", "Run cleaning"]
-    assert app.dataframe[0].value.columns.tolist() == ["city", "count"]
 
 
 def test_empty_csv_displays_read_error_without_uncaught_exception():

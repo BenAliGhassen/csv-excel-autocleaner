@@ -1,7 +1,6 @@
 import pandas as pd
 import pytest
 from pandas.testing import assert_frame_equal
-
 from cleanup import (
     drop_blank_rows,
     drop_columns,
