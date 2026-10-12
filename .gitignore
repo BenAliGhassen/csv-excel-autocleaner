@@ -14,3 +14,6 @@ main.py
 *.csv
 *.xlsx
 !sample_data.csv
+coverage.xml
+.coverage
+.scannerwork/
