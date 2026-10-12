@@ -1,6 +1,9 @@
 # CSV/Excel Auto-Cleanup Tool (v1)
 
 
+[![Sonar](https://github.com/BenAliGhassen/csv-excel-autocleaner/actions/workflows/sonar.yml/badge.svg?branch=main)](https://github.com/BenAliGhassen/csv-excel-autocleaner/actions/workflows/sonar.yml)
+
+
 [![.github/workflows/test.yml](https://github.com/BenAliGhassen/csv-excel-autocleaner/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/BenAliGhassen/csv-excel-autocleaner/actions/workflows/test.yml)
 
 
