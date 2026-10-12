@@ -1,5 +1,7 @@
 run-name : Tests
-on : [push, fork, pull_request]
+on: [push, pull_request]
+permissions:
+    contents: read
 jobs:
   test:
     runs-on: ubuntu-latest
