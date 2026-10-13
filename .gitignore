@@ -10,6 +10,9 @@ ToDo.docx
 Thumbs.db
 /.Skills/Review/
 /.Skills/Coding_Assistant/
+/.Skills/Testing/claude-code-qa.SKILL.md
+/.Skills/Testing/pytest-best-practices.SKILL.md
+/.Skills/Testing/pytest-patterns.SKILL.md
 /.github/skills/readme-write/
 main.py
 *.csv
